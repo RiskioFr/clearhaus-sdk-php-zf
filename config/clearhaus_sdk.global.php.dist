@@ -1,0 +1,31 @@
+<?php
+use Clearhaus\Client;
+
+/**
+ * This is the config file for ClearhausModule. Just drop this file into your config/autoload folder (don't
+ * forget to remove the .dist extension from the file), and configure it as you want.
+ */
+
+return [
+    'clearhaus_sdk' => [
+        /**
+         * Allow to provide API key that you will find in your account.
+         */
+        //'api_key' => null,
+
+        /**
+         * Allow to define the usage of either test or live accounts.
+         */
+        //'mode' => Client::MODE_TEST,
+
+        /**
+         * Allow to configure the usage of request signature.
+         */
+        //'use_signature' => true,
+
+        /**
+         * HTTPlug plugins that allow to add some processing logic.
+         */
+        //'plugins' => [],
+    ],
+];
