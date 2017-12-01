@@ -13,7 +13,7 @@ You can sign up for a Clearhaus account at https://www.clearhaus.com/.
 ## Requirements
 
 * PHP 7.0+
-* [clearhaus/sdk ^1.0](https://github.com/RiskioFr/clearhaus-sdk-php)
+* [clearhaus/sdk ^0.1](https://github.com/RiskioFr/clearhaus-sdk-php)
 
 ## Installation
 
