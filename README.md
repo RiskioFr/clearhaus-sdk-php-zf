@@ -5,9 +5,10 @@ Zend Framework module that integrates Clearhaus SDK which decoupled from any HTT
 
 You can sign up for a Clearhaus account at https://www.clearhaus.com/.
 
-[![Build Status](https://img.shields.io/travis/RiskioFr/clearhaus-sdk-php-zf.svg?style=flat)](http://travis-ci.org/RiskioFr/clearhaus-sdk-php-zf)
-[![Latest Stable Version](http://img.shields.io/packagist/v/riskio/clearhaus-sdk-php-zf.svg?style=flat)](https://packagist.org/packages/riskio/clearhaus-sdk-php-zf)
-[![Total Downloads](http://img.shields.io/packagist/dt/riskio/clearhaus-sdk-php-zf.svg?style=flat)](https://packagist.org/packages/riskio/clearhaus-sdk-php-zf)
+[![Build Status](https://img.shields.io/travis/RiskioFr/clearhaus-sdk-php-zf.svg?style=flat-square)](http://travis-ci.org/RiskioFr/clearhaus-sdk-php-zf)
+[![Latest Stable Version](http://img.shields.io/packagist/v/clearhaus/sdk-zf.svg?style=flat-square)](https://packagist.org/packages/clearhaus/sdk-zf)
+[![Total Downloads](http://img.shields.io/packagist/dt/clearhaus/sdk-zf.svg?style=flat-square)](https://packagist.org/packages/clearhaus/sdk-zf)
+[![GitHub license](https://img.shields.io/github/license/RiskioFr/clearhaus-sdk-php-zf.svg?style=flat-square)](https://github.com/RiskioFr/clearhaus-sdk-php-zf/blob/master/LICENSE)
 
 ## Requirements
 
@@ -42,8 +43,8 @@ In Zend Expressive application, you have to add `ClearhausModule\ConfigProvider:
 ```php
 $aggregator = new ConfigAggregator([
     ClearhausModule\ConfigProvider::class,
-    
-    // ... other stuff goes here 
+
+    // ... other stuff goes here
 
     // Load application config in a pre-defined order in such a way that local settings
     // overwrite global settings. (Loaded as first to last):
@@ -52,7 +53,7 @@ $aggregator = new ConfigAggregator([
     //   - `local.php`
     //   - `*.local.php`
     new PhpFileProvider('config/autoload/{{,*.}global,{,*.}local}.php'),
-    
+
 
     // Load development config if it exists
     new PhpFileProvider('config/development.config.php'),
